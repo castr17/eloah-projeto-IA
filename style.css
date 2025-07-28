@@ -1,0 +1,66 @@
+:root {
+    --cor-fundo: #003304;       /* Verde escuro (fundo) */
+    --cor-principal: #ffba61;   /* Laranja queimado (caixa principal) */
+    --cor-secundaria: #003300;  /* Verde bem escuro (botões) */
+    --cor-destaque: #003300;    /* Verde escuro (títulos e hover) */
+    --cor-texto: #ffffff;       /* Branco (texto) */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    color: var(--cor-destaque);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.caixa-perguntas {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    transform: scale(1.05);
+}
+
+.caixa-resultado {
+    margin-top: 20px;
+}
+
+.texto-resultado {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
